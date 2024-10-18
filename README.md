@@ -36,17 +36,33 @@ Bei manchen Druckern kann es sein, dass die Tolleranzen zu groß sind und das PC
 
 ## Firmware
 
-Ich werde eine gebaute Firmware zu einem späterem Zeitpunkt bereitstellen (sowie hier das Repo verlinken).
+Die Firmware die wir empfelen findet sich unter <https://github.com/ALinkbetweenNets/vial-qmk-ik.git>.\
+Im Vergleich zur originalen Firmware von ianmaclarty/vial-qmk-ik, haben wir uns drum bemüht, eine möglichst standardisierte Firmware zu erstellen.
+
+Features:
+
+* VIAL Support ist enabled.
+* n-key rollover ist enabled.
+
+```sh
+docker build -t qmk-firmware --build-arg source_repo=https://github.com/ALinkbetweenNets/vial-qmk-ik.git --build-arg keymap=handwired/ianmaclarty/ik1_2:vial .
+docker run --rm qmk-firmware sh -c 'tar cf - *.uf2' | tar xvvf -
+```
 
 ## Assembly
 
-0. Firmware flashen
-1. PCBs bestücken (Dioden, Buchsen, Waveshare 2040-zero)
-2. Alle Tasten mit einer Pinzette testen
-3. PCB in das Case einsetzen
-4. Switche einsetzen
-5. Switche löten
-6. Pins abschneiden
-7. Heat set inserts auf der Cases Unterseite einsetzen
-8. Zuschrauben
-9. Bumpons auf die Unterseite kleben
+1. Firmware auf die Pi's flashen
+2. zuerst das linke PCBs mit Dioden sowie dem Waveshare 2040-zero bestücken
+3. Alle Tasten mit einer Pinzette testen
+4. Nun das rechte PCB mit Dioden sowie dem Waveshare 2040-zero bestücken
+5. Auf beiden PCB's die Buchsen verlöten
+6. Nun die rechten und linken PCB's mit einem TRS Kabel verbinden
+7. Die rechte PCB Hälfte testen
+8. PCB in das Case einsetzen
+9. Switche einsetzen
+10. Switche löten
+11. Erneut alle Tasten testen
+12. Pins abschneiden
+13. Heat set inserts auf der Cases Unterseite einsetzen
+14. Zuschrauben
+15. Bumpons auf die Unterseite kleben
