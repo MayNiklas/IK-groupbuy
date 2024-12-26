@@ -2,6 +2,14 @@
 
 https://github.com/ianmaclarty/ik
 
+Since I'm going to hand out a few IK kits during `38C3`, I decided to make this repository public to give everyone that got one the necessary information to build it.
+
+`top_right_finalfix.stl` is easier to print than the original `righttop.stl` and should be used instead. For the left side, just mirror it in your slicer.
+We suggest to cut off the RP2040 cover in the slicer. This allows you to print it on the bed with the top side facing down. This way the surface will be smoother.
+I'm going to attach the 3MF flie I created for my BambuLab P1s as a reference. Please modify your filament settings accordingly.
+
+The firmware is attached under releases.
+
 ## Items
 
 ### Packliste
