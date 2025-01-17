@@ -10,6 +10,13 @@ I'm going to attach the 3MF flie I created for my BambuLab P1s as a reference. P
 
 The firmware is attached under releases.
 
+*Inportant*:
+I just noted, that the batch I handed out during '38C3' is faulty:
+the left PCB is 1,6mm thick instead of 1,2mm.
+In case you are affected by this, please contact me!
+I'm going to order replacement PCB's and ship them to you in case you received the wrong PCB.
+I'm sorry! I noticed while scrolling through my order history today.
+
 ## Items
 
 ### Packliste
